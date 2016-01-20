@@ -1,0 +1,63 @@
+<html>
+<head><title>Calculator</title>
+    
+    <link rel="stylesheet" href="calc.css">
+    </head>
+    
+    <body>
+        <h2>My Calculator</h2>
+        <div>
+            <table>
+        <form name="form1">
+        <tr>
+        <td colspan="2"><input tpe="text" name="A" id="A" readonly></td>
+        <td colspan="1"><p id="operand"></p></td>
+        <td colspan="2"><input tpe="text" name="B" id="B"></td>
+        <td colspan="1"><p>=</p></td>
+        <td colspan="4"><input tpe="text" name="res" id="result" readonly></td>
+
+                </tr>
+                <tr>
+                <td><input type="button" value="Clear A" onclick="clearA()"></td>
+                                    <td><input type="button" value="Clear B" onclick="clearB()"></td>
+                <td><input type="button" value="Clear Result" onclick="clearResult()"></td>
+                <td><input type="button" value="Clear ALL" onclick="clearAll()"></td>
+
+                </tr>
+            <tr>
+                <td>
+            <input type="button" name="1" value="1" onclick="btn1()">
+            <input type="button" name="2" value="2" onclick="btn2()">
+            <input type="button" name="3" value="3" onclick="btn3()">
+            <input type="button" name="Add" value="+" onclick="add()">
+            </br>
+            <input type="button" name="4" value="4" onclick="btn4()">
+            <input type="button" name="5" value="5" onclick="btn5()">
+            <input type="button" name="6" value="6" onclick="btn6()">
+                    
+        <input type="button" name="Minus" value="-" onclick="minus()">
+            </br>
+                    
+        <input type="button" name="7" value="7" onclick="btn7()">
+                        
+        <input type="button" name="8" value="8" onclick="btn8()">
+                        
+        <input type="button" name="9" value="9" onclick="btn9()">
+                        
+        <input type="button" name="Multiply" value="*" onclick="mul()">
+            </br>
+                        
+        <input type="button" name="0" value="0" onclick="btn0()">
+                        
+        <input type="button" name=" " value="C" onclick="clr()">
+                        
+        <input type="button" name="." value="." onclick = "dot()">
+                        
+        <input type="button" name="evaluate" value="=" onclick = "equal()">
+                    </td>
+              </tr> 
+    </table>
+        </form>
+</div>
+<script src="calc.js"></script>
+    </body></html>
